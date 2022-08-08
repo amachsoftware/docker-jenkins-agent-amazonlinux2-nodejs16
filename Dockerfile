@@ -1,4 +1,4 @@
-FROM ghcr.io/lazzurs/jenkins-agent-amazonlinux2:latest
+FROM ghcr.io/amachsoftware/jenkins-agent-amazonlinux2:latest
 
 ARG NVM_VERSION=v0.38.0
 ARG NODE_VERSION=16.16.0
@@ -8,7 +8,7 @@ ARG SONAR_HOME=/home/jenkins/.sonar
 ARG SONAR_SCANNER_PACKAGE=sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip
 
 LABEL Description="Docker image with Jenkins agent and Node.js on Amazon Linux 2"
-LABEL Vendor="Catalin Piscureanu"
+LABEL Vendor="Amach Software"
 
 USER root
 
